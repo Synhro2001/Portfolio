@@ -1,0 +1,31 @@
+nav {
+    background-color: #af7a6dc2;
+    width: max-content;
+    border-radius: 48px;
+    z-index: 99;
+    
+    padding: 10px 80px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+    a{
+        background: transparent;
+        border-radius: 50%;
+        font-size: 15px;
+        padding: 12px;
+        display: flex;
+      
+    }
+    a:hover {
+        background: var(--color-primary);
+    }
+    a.active {
+        background-color: var(--color-primary);
+        color: var(--color-primary-variant)
+    }
+    
+}
+

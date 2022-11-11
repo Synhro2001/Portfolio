@@ -1,0 +1,93 @@
+.experience {
+    padding-top: 130px;
+    &__title {
+        text-align: center;
+        position: relative;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 20px 65px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative; 
+            padding-left: 35px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                background: var(--color-primary);
+                z-index: 2;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    background-color: #000;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+       
+        &:before {
+            content: '';
+            height: 1px;
+            width: 50px;
+            position: absolute;
+            top: 68px;
+            background-color: #000;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 50px;
+        
+        }
+        &-box{
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--color-primary);
+            background-color: #af7a6dc2;
+           
+        }
+        &-body {
+            height: 120px;
+            text-align: center;
+            padding-left: 43px;
+            margin-top: 12px;
+            order: 3px solid var(--color-primary);
+         
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+   
+} 
